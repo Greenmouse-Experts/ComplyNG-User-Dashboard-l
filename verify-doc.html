@@ -335,6 +335,7 @@
                                                     <input type="search" placeholder="Search Document.">
                                                     <button type="submit"><i class="bi bi-search"></i></button>
                                                 </form>
+                                                <h6 class="move">Move Page For More</h6>
                                             </div>
                                         </div>
                                         <div class="tabel-div">
@@ -358,7 +359,11 @@
                                                     <td>High</td>
                                                     <td>16 - 07 -2022</td>
                                                     <td><input type="file"></td>
-                                                    <td><button>Send</button></td>
+                                                    <td>
+                                                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            Verify
+                                                        </button>
+                                                    </td>
                                                   </tr>
                                                 </tbody>
                                             </table>
@@ -393,8 +398,84 @@
         <!-- plugins -->
         <script src="assets/js/vendors.js"></script>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Compliance Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg font-26"></i>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="model">
+                                    <h1>
+                                        Please chose the type of Compliance Service
+                                    </h1>
+                                    <form>
+                                        <select required class="mb-3">
+                                            <option hidden>Select</option>
+                                            <option>
+                                                Company Registration Status. - N7,500'
+                                            </option>
+                                            <option>
+                                                Company Compliance Status - N 5,500
+                                            </option>
+                                            <option>
+                                                Primary School Document - N5,000
+                                            </option>
+                                            <option>
+                                                Secondary School Document - N5,000
+                                            </option>
+                                            <option>
+                                                University Document - N7,500
+                                            </option>
+                                            <option>
+                                                Other Higher Qualification N7,500
+                                            </option>
+                                            <option>
+                                                Guarantor/Surety/ Referee - N8,000
+                                            </option>
+                                            <option>
+                                                Land verification - N10,000
+                                            </option>
+                                            <option>
+                                                Address Verification - N10,000
+                                            </option>
+                                            <option>
+                                                Business History verification - N10,000
+                                            </option>
+                                            <option>
+                                                Profile verification - N12,000
+                                            </option>
+                                        </select>
+                                        <label>
+                                            Others (please state) - N7,000
+                                        </label>
+                                        <input class="mb-3" type="text" placeholder="Optional">
+                                        <div class="mb-3 please">
+                                            <b>Please Note:</b> “For Others, a case specific upward review may occur and be invoiced to you”
+                                        </div>
+                                        <button type="submit" class="here">
+                                            Click to here to Pay
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal-1 -->
+
         <!-- custom app -->
         <script src="assets/js/app.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     </body>
 </html>
